@@ -78,5 +78,43 @@ namespace WindowsFormsApp
                 MessageBox.Show("{ "+ temp + " }");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8(this, "remove");
+            Form9 f9 = new Form9(this, "remove");
+            Form10 f10 = new Form10(this);
+            switch (listBox1.SelectedIndex.ToString())
+            {
+                case "0":
+                    f8.Show();
+                    break;
+                case "1":
+                    f9.Show();
+                    break;
+                case "2":
+                    f10.Show();
+                    break;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8(this);
+            Form9 f9 = new Form9(this);
+            Form10 f10 = new Form10(this);
+            switch (listBox1.SelectedIndex.ToString())
+            {
+                case "0":
+                    f8.Show();
+                    break;
+                case "1":
+                    f9.Show();
+                    break;
+                case "2":
+                    f10.Show();
+                    break;
+            }
+        }
     }
 }

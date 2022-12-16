@@ -6,10 +6,18 @@ namespace WindowsFormsApp
     public partial class Form9 : Form
     {
         Form7 adder = new Form7();
+        private string concept = "";
         public Form9()
         {
             InitializeComponent();
         }
+        public Form9(Form callingForm, string concept)
+        {
+            adder = callingForm as Form7;
+            this.concept = concept;
+            InitializeComponent();
+        }
+        
         public Form9(Form callingForm)
         {
             adder = callingForm as Form7;
