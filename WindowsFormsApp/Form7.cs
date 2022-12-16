@@ -83,7 +83,7 @@ namespace WindowsFormsApp
         {
             Form8 f8 = new Form8(this, "remove");
             Form9 f9 = new Form9(this, "remove");
-            Form10 f10 = new Form10(this);
+            Form10 f10 = new Form10(this, "remove");
             switch (listBox1.SelectedIndex.ToString())
             {
                 case "0":
